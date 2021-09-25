@@ -16,3 +16,5 @@ DirectoryIndex /index/files.php
         ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
     </Directory>    
 ```
+
+![image](https://user-images.githubusercontent.com/1501327/134769877-7163d3fb-a225-463e-a824-3dbff075de9c.png)
