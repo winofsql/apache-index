@@ -19,7 +19,7 @@ session_start();
 // ******************************
 // パスワード
 // ******************************
-$GLOBALS['pass'] = 'iseifu';
+$GLOBALS['pass'] = 'password';
 
 require_once("view_main.php");
 ?>
