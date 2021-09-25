@@ -8,8 +8,8 @@ DirectoryIndex /index/files.php
 
 ## httpd-xampp.conf
 ```xml
-    Alias /php "C:\app\workspace\subject-0924\php"
-    <Directory "C:\app\workspace\subject-0924\php">
+    Alias /php "D:\app\workspace\subject-0924\php"
+    <Directory "D:\app\workspace\subject-0924\php">
         Options +Indexes
         AllowOverride All
         Require all granted
