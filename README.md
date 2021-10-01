@@ -1,4 +1,11 @@
 # apache-index
+
+## httpd.conf の変更
+```
+Include "conf/extra/httpd-xampp.conf"
+Include "conf/extra/httpd-lightbox.conf"
+```
+
 ## .htaccess
 ```
 DirectoryIndex index.php
