@@ -1,0 +1,7 @@
+<Context
+	displayName="Web Application Home"
+	docBase="D:\app\tomcat21"
+	path="/lightbox"
+	reloadable="true"
+	useNaming="false">
+</Context>
