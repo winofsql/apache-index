@@ -10,6 +10,8 @@ pthorsson.vscode-jsp
 \java\bin\javac -encoding utf8 -classpath "..;\xampp\tomcat\lib\servlet-api.jar;\xampp\tomcat\lib\jsp-api.jar" Sample1.java
 ```
 
+![image](https://user-images.githubusercontent.com/1501327/136183948-b342788d-fcb3-4ad8-9740-f32409e5615a.png)
+
 ## Sample1.java
 ```java
 package lightbox;
