@@ -48,28 +48,31 @@ form {
 
 .btn {
     vertical-align: top;
+    width: 120px;
 }
 </style>
 </head>
 <body>
+<h3 class="alert alert-primary">TOMCAT JSP サンプル</h3>
 <div id="main">
 
-<form method="get">
-    <input type="text" name="field1" value="<%= strField1 %>">
-    <input type="submit" name="send" value="GET" class="btn btn-info">
-</form>
+    <form method="get">
+        <input type="text" name="field1" value="<%= strField1 %>">
+        <input type="submit" name="send" value="GET" class="btn btn-info ms-3">
+    </form>
 
-<form method="post">
-    <input type="text" name="field2" value="<%= strField2 %>">
-    <input type="submit" name="send" value="POST" class="btn btn-info">
-</form>
-
+    <form method="post">
+        <input type="text" name="field2" value="<%= strField2 %>">
+        <input type="submit" name="send" value="POST" class="btn btn-info ms-3">
+    </form>
 
 <div class="alert alert-primary"><%= request.getMethod() %></div>
 
 <%
 out.println( printFor(month, strField2) );
 %>
+
+<hr>
 
 <%= strField1 %>
 </div>
