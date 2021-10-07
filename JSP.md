@@ -1,3 +1,15 @@
+## リジストリ
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit]
+"JavaHome"="C:\\java"
+```
+![image](https://user-images.githubusercontent.com/1501327/136312504-2e5cd439-2c88-4035-980a-06fc32c53f88.png)
+
+
 ## 拡張( Syntax Highlight )
 ```
 pthorsson.vscode-jsp
