@@ -1,7 +1,7 @@
 <%@ page
     language="java"
     contentType="text/html;charset=utf-8" %>
-<jsp:useBean id="lightbox" scope="session" class="lightbox.Sample1" />
+<jsp:useBean id="lbox" scope="session" class="lightbox.Sample1" />
 <%!
 // *********************************************************
 // ローカル関数
@@ -23,8 +23,8 @@ public String printFor( String[] data, String str ) {
 // *********************************************************
 request.setCharacterEncoding("utf-8");
 
-String strField1 = lightbox.request( request, "field1");
-String strField2 = lightbox.request( request, "field2");
+String strField1 = lbox.request( request, "field1");
+String strField2 = lbox.request( request, "field2");
 
 String[] month = {"睦月","如月","弥生","卯月","皐月","水無月","文月","葉月","長月","神無月","霜月","師走"};
 
@@ -75,6 +75,19 @@ out.println( printFor(month, strField2) );
 <hr>
 
 <%= strField1 %>
+
+<hr>
+
+<%= lbox.getDateString() %>
+
+<hr>
+
+<jsp:getProperty name="lbox" property="dateString" />
+
+<hr>
+
+<%= lightbox.Sample1.getDateSystem() %>
+
 </div>
 </body>
 </html>
