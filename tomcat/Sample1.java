@@ -19,34 +19,34 @@ public class Sample1 {
 
     }
 
-	// *****************************************************
-	// 日付文字列 ( インスタンス )
-	// *****************************************************
-	public String getDateString( ) {
+    // *****************************************************
+    // 日付文字列 ( インスタンス )
+    // *****************************************************
+    public String getDateString( ) {
 
-		Date myDate = null;
-		String strDate = null;
+        Date myDate = null;
+        String strDate = null;
 
-		myDate = new Date();
-		strDate = DateFormat.getDateInstance().format(myDate);
+        myDate = new Date();
+        strDate = DateFormat.getDateInstance().format(myDate);
 
-		return strDate;
+        return strDate;
 
-	}
+    }
 
-	// *****************************************************
-	// 日付文字列 ( クラス )
-	// *****************************************************
-	public static String getDateSystem( ) {
+    // *****************************************************
+    // 日付文字列 ( クラス )
+    // *****************************************************
+    public static String getDateSystem( ) {
 
-		Date myDate = null;
-		String strDate = null;
+        Date myDate = null;
+        String strDate = null;
 
-		myDate = new Date();
-		strDate = DateFormat.getDateInstance().format(myDate);
+        myDate = new Date();
+        strDate = DateFormat.getDateInstance().format(myDate);
 
-		return strDate;
+        return strDate;
 
-	}    
+    }
 
 }
