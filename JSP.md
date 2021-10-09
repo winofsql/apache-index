@@ -8,9 +8,10 @@ Windows Registry Editor Version 5.00
 "JavaHome"="C:\\java"
 ```
 ![image](https://user-images.githubusercontent.com/1501327/136312504-2e5cd439-2c88-4035-980a-06fc32c53f88.png)
+
 ![image](https://user-images.githubusercontent.com/1501327/136312740-9da8c46a-d689-4067-8974-0ffaca47bf9e.png)
 
-![image](https://user-images.githubusercontent.com/1501327/136183602-d6e3587c-0362-4d98-9649-8e6459d39b8b.png)
+
 
 ## comp.bat
 ```
