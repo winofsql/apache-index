@@ -1,6 +1,8 @@
 <%@ page
     language="java"
-	import="java.sql.*"
+    import="java.sql.*"
+    import="java.util.*"
+    import="javax.servlet.http.*"
     contentType="text/html;charset=utf-8" %>
     <jsp:useBean id="lbox" scope="session" class="lightbox.Sample1" />
 <%@ include file="model.jsp" %>
@@ -8,6 +10,7 @@
 // *********************************************************
 // ページ処理
 // *********************************************************
+noCache(response);
 request.setCharacterEncoding("utf-8");
 
 StringBuilder html = new StringBuilder();
