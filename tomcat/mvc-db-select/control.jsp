@@ -22,6 +22,8 @@ Connection conn = null;
 Statement stmt = null;
 ResultSet rs = null;
 
+Class.forName("com.mysql.jdbc.Driver");
+
 try {
     conn = DriverManager.getConnection(
         "jdbc:mysql://localhost/lightbox?user=root&password=&characterEncoding=UTF-8"
