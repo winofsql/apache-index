@@ -1,0 +1,70 @@
+<%@ page contentType="text/html;charset=utf-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta charset="UTF-8">
+<title><%= strTitle %></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.2/css/bootstrap.min.css">
+
+<style>
+#main {
+    padding: 30px;
+    font-size: 24px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.btn {
+    vertical-align: top;
+    width: 120px;
+}
+</style>
+</head>
+<body>
+<h3 class="alert alert-primary"><%= strTitle %></title>
+</h3>
+
+<div id="main">
+
+    <form method="get">
+        <input type="text" name="field1" value="<%= strField1 %>">
+        <input type="submit" name="send" value="GET" class="btn btn-info ms-3">
+    </form>
+
+    <form method="post">
+        <input type="text" name="field2" value="${param.field2}">
+        <input type="submit" name="send" value="POST" class="btn btn-info ms-3">
+    </form>
+
+    <div class="alert alert-primary"><%= strMethod %></div>
+
+    <%
+    out.println( printFor(month, strField2) );
+    %>
+
+    <hr>
+
+    <%= strField1 %>
+
+    <hr>
+
+    ${param.field1}
+
+    <hr>
+
+    <%= lbox.getDateString() %>
+
+    <hr>
+
+    <jsp:getProperty name="lbox" property="dateString" />
+
+    <hr>
+
+    <%= lightbox.Sample1.getDateSystem() %>
+
+</div>
+</body>
+</html>
