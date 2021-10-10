@@ -13,6 +13,9 @@ public void setHtmlColumn( StringBuilder data, String Column ) {
     data.append("</td>");
 }
 
+// *********************************************************
+// キャッシュ無効
+// *********************************************************
 public void noCache( HttpServletResponse response ) {
 
     Calendar objCal1 = Calendar.getInstance();
