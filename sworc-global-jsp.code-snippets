@@ -127,7 +127,7 @@
         "scope": "java",
         "prefix": "sysout",
         "body": [
-            "out.println(TM_SELECTED_TEXT);"
+            "out.println($TM_SELECTED_TEXT);"
         ],
         "description": "Print to standard out"
     },
