@@ -98,6 +98,23 @@ form {
 
     <%= lightbox.Sample1.getDateSystem() %>
 
+    <hr>
+
+    <%
+    // セッション初回
+    if (session.isNew()) {
+        session.setAttribute("id", "セッション開始");
+    }
+    else {
+        if ( strField2.equals("quit") ) {
+            session.invalidate();
+        }
+        else {
+            out.println(session.getAttribute("id"));
+        }
+    }
+    %>
+
 </div>
 </body>
 </html>
