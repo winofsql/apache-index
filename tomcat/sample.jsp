@@ -103,14 +103,15 @@ form {
     <%
     // セッション初回
     if (session.isNew()) {
-        session.setAttribute("id", "セッション開始");
+        session.setAttribute("app-var", "セッション開始");
     }
     else {
         if ( strField2.equals("quit") ) {
+            // セッション破棄
             session.invalidate();
         }
         else {
-            out.println(session.getAttribute("id"));
+            out.println(session.getAttribute("app-var"));
         }
     }
     %>
