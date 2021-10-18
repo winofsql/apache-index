@@ -103,10 +103,10 @@ form {
     <%
     // セッション初回
     if (session.isNew()) {
-        session.setAttribute("app-var", "セッション開始");
+        session.setAttribute("app-session", "OK");
     }
     else {
-        out.println(session.getAttribute("app-var"));
+        out.println(session.getAttribute("app-session"));
     }
     %>
 
