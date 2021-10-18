@@ -107,6 +107,9 @@ form {
     }
     else {
         out.println(session.getAttribute("app-session"));
+        if ( strField2.equals("quit") ) {
+            response.sendRedirect("sample.jsp");
+        }
     }
     %>
 
