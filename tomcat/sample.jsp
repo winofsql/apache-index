@@ -20,6 +20,8 @@ public String printFor( String[] data, String str ) {
 <%
 // *********************************************************
 // ページ処理
+// EL 式
+// https://works.forward-soft.co.jp/blog/detail/10066
 // *********************************************************
 request.setCharacterEncoding("utf-8");
 
