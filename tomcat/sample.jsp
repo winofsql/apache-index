@@ -28,9 +28,20 @@ request.setCharacterEncoding("utf-8");
 String strTitle = "TOMCAT JSP サンプル";
 String strMethod = request.getMethod();
 
-String strField1 = lbox.request( request, "field1");
-String strField2 = lbox.request( request, "field2");
+String strField1 = request.getParameter( "field1" );
+String strField2 = request.getParameter( "field2" );
 
+if ( strField1 == null ) {
+    strField1 = "";
+}
+if ( strField2 == null ) {
+    strField2 = "";
+}
+
+// String strField1 = lbox.request( request, "field1");
+// String strField2 = lbox.request( request, "field2");
+
+// 配列
 String[] month = {"睦月","如月","弥生","卯月","皐月","水無月","文月","葉月","長月","神無月","霜月","師走"};
 
 %>
@@ -90,7 +101,7 @@ form {
 
     <hr>
 
-    <%= lbox.getDateString() %>
+    <%--= lbox.getDateString() --%>
 
     <hr>
 
