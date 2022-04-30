@@ -1,7 +1,7 @@
 <%@ page
     language="java"
     contentType="text/html;charset=utf-8" %>
-<jsp:useBean id="lbox" scope="session" class="lightbox.Sample1" />
+<!--jsp:useBean id="lbox" scope="session" class="lightbox.Sample1" /-->
 <%!
 // *********************************************************
 // ローカル関数
@@ -94,11 +94,11 @@ form {
 
     <hr>
 
-    <jsp:getProperty name="lbox" property="dateString" />
+    <!--jsp:getProperty name="lbox" property="dateString" /-->
 
     <hr>
 
-    <%= lightbox.Sample1.getDateSystem() %>
+    <%--= lightbox.Sample1.getDateSystem() --%>
 
     <hr>
 
